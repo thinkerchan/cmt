@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none; }
+
+/* global vars */
+:root {
+  --color:#0777dd;
+  --bdcolor:#D3D3D3;
+  --fcolor:#555;
+  --hlcolor:#f44;
+  --ff:'Microsoft Yahei';
+  --cmtcolor:#333; }
+
+body {
+  margin: 0 auto;
+  width: 800px; }
+
+body .btn {
+  background-color: var(--color);
+  border-radius: 2px;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer; }
+  body .btn:hover {
+    background-color: var(--hlcolor); }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+.cmt-area {
+  padding-bottom: 20px;
+  /* hd */
+  /* bd */
+  /* ft */ }
+  .cmt-area .cmt-area-hd {
+    position: relative;
+    font-size: 14px;
+    border-bottom: 1px solid var(--bdcolor);
+    height: 54px; }
+  .cmt-area .cmtarea-section-content {
+    border: 1px solid var(--bdcolor); }
+  .cmt-area .cmt-area-tit {
+    font-weight: normal;
+    font-size: 24px;
+    position: relative;
+    top: 3px;
+    color: var(--color);
+    font-family: var(--ff);
+    line-height: 50px;
+    display: inline-block; }
+  .cmt-area .cmt-count-wrap {
+    font-size: 12px;
+    color: var(--fcolor);
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 54px; }
+  .cmt-area .cmt-count {
+    color: var(--hlcolor); }
+  .cmt-area .cmt-login-area {
+    line-height: 26px;
+    margin-top: 10px; }
+  .cmt-area .cmt-login-btn {
+    background: var(--color);
+    height: 26px;
+    line-height: 26px;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    cursor: pointer; }
+  .cmt-area .cmt-main-txtarea-wrap {
+    overflow: hidden;
+    border: 1px solid var(--bdcolor);
+    margin-top: 10px; }
+  .cmt-area .cmt-main-txtarea {
+    overflow: hidden;
+    height: 79px;
+    padding: 5px;
+    font-size: 14px; }
+  .cmt-area .cmt-area-ft {
+    text-align: right;
+    margin-top: 10px;
+    line-height: 26px;
+    height: 26px;
+    position: relative; }
+  .cmt-area .cmt-main-txtarea-sbmt-btn {
+    height: 26px;
+    line-height: 26px;
+    display: inline-block;
+    width: 100px;
+    text-align: center; }
+
+/* cmt list */
+.cmt-content {
+  overflow: hidden;
+  border-top: 1px solid var(--bdcolor);
+  font-size: 12px;
+  /* left part */
+  /* right part */
+  /* hd */
+  /* bd */ }
+  .cmt-content .cmt-item {
+    padding: 10px 0;
+    border-bottom: 1px dashed #CFD1CE; }
+  .cmt-content .cmt-user-avatar {
+    float: left;
+    width: 65px;
+    border-radius: 50%; }
+  .cmt-content .user-center-link {
+    text-decoration: none; }
+  .cmt-content .user-avatar-img {
+    width: 50px;
+    height: 50px;
+    background-color: var(--fcolor);
+    border-radius: 50%; }
+  .cmt-content .cmt-item-data-wrap {
+    margin-left: 65px;
+    color: var(--fcolor); }
+  .cmt-content .cmt-item-data-hd {
+    height: 24px;
+    overflow: hidden; }
+  .cmt-content .cmt-item-data-user {
+    color: var(--color);
+    margin-left: 10px; }
+  .cmt-content .cmt-item-data-time {
+    margin-left: 10px;
+    color: var(--fcolor); }
+  .cmt-content .cmt-item-data {
+    padding: 5px;
+    word-wrap: break-word;
+    word-break: normal;
+    font-size: 14px;
+    color: var(--cmtcolor); }
+  .cmt-content .cmt-item-data-hd-ft {
+    text-align: right; }
+  .cmt-content .cmt-item-reply-btn {
+    color: var(--color); }
+
+/*# sourceMappingURL=index.css.map */
