@@ -6,72 +6,17 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <!-- 评论容器 s -->
-  <div id="cmtPlaceholder">
-
-    <!-- 主评论框 s-->
-    <div class="cmt-area">
-      <div class="cmt-area-hd">
-        <div class="cmt-area-tit">网友评论</div>
-        <div class="cmt-count-wrap">共有<span class="cmt-count">233</span>条评论</div>
-      </div>
-      <div class="cmt-area-bd">
-        <div class="cmt-login-area">
-          <a  class="btn cmt-login-btn" >通行证登录</a>
-        </div>
-        <div class="cmt-main-txtarea-wrap">
-          <div class="cmt-main-txtarea" contenteditable></div>
-          <!-- <textarea class="cmt-main-txtarea" id="JmainCmt" ></textarea> -->
-        </div>
-      </div>
-      <div class="cmt-area-ft">
-        <!-- 预留验证码 -->
-        <a  class="btn cmt-main-txtarea-sbmt-btn" data-event="postcmt">提交评论</a>
-      </div>
-    </div>
-    <!-- 主评论框 e -->
-
-    <!-- 评论数据框 s -->
-    <div class="cmt-content">
-      <ul class="cmt-list" id="JcmtList">
-        <li class="cmt-item">
-          <div class="cmt-user-avatar">
-            <a href="{{user-center}}" class="user-center-link" target="_blank">
-              <img class="user-avatar-img">
-            </a>
-          </div>
-          <div class="cmt-item-data-wrap">
-            <!-- hd s-->
-            <div class="cmt-item-data-hd">
-              <!-- floor -->
-              <span class="cmt-item-data-floor">1楼</span>
-              <!-- data-user -->
-              <a class="cmt-item-data-user">广东省广州市网友</a>
-              <!-- create-time -->
-              <span class="cmt-item-data-time">2017-12-18 18:12:10</span>
-              <!-- vote (todo) -->
-            </div>
-            <!-- hd e -->
-
-            <!-- bd s -->
-            <p class="cmt-item-data">君不见，黄河之水天上来，奔流到海不复回。君不见，高堂明镜悲白发，朝如青丝暮成雪。 人生得意须尽欢，莫使金樽空对月。 天生我材必有用，千金散尽还复来。 烹羊宰牛且为乐，会须一饮三百杯。 岑夫子，丹丘生，将进酒，杯莫停。 与君歌一曲，请君为我倾耳听。 钟鼓馔玉不足贵，但愿长醉不复醒。 古来圣贤皆寂寞，惟有饮者留其名。 陈王昔时宴平乐，斗酒十千恣欢谑。 主人何为言少钱，径须沽取对君酌。 五花马，千金裘，呼儿将出换美酒，与尔同销万古愁。</p>
-            <!-- bd e -->
-
-            <!-- ft s -->
-            <div class="cmt-item-data-hd-ft">
-              <a class="cmt-item-reply-btn">回复</a>
-            </div>
-            <!-- replyPlaceholder -->
-
-            <!-- ft e -->
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-
-  <!-- 评论容器 e -->
+  <div id="cmtPlaceholder" class="cmt-area"></div>
+  <!-- leancloud jssdk -->
+  <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.10.0/dist/av-min.js"></script>
+  <script src="MD5.js"></script>
   <script src="cmt.js"></script>
+  <script>
+    CMT.init({
+      appId:'gWTBwWsLFXIy86kXX1IwzoQL-gzGzoHsz',
+      appKey: 'AU2OMotO88FE8Jsx7rXKtyAu',
+      el: '#cmtPlaceholder',
+    })
+  </script>
 </body>
 </html>
