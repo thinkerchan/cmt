@@ -333,7 +333,7 @@
        let _con = '', tpl = '',avatarUrl='';
 
        if (!!_email) {
-        avatarUrl =CONFIG.avatarUrl+this.MD5(_email)+'?s=50&d=retro';
+        avatarUrl =CONFIG.avatarUrl+this.MD5(_email)+'?s=50&d=identicon';
        }else{
         avatarUrl = CONFIG.avatarUrl
        }
